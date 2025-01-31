@@ -7,50 +7,52 @@
     <style>
         body {
             font-family: sans-serif;
-            margin: 20px;
+            margin: 0; /* Remove default body margin */
             line-height: 1.6;
+            background-image: url("/Users/slowhike/Downloads/wmcgf8jsfooc1.jpeg"); /* Background image */
+            background-size: cover; /* Cover the entire background */
+            background-repeat: no-repeat; /* Prevent image from repeating */
+            color: #333; /* Default text color (can be adjusted) */
         }
+
         h1, h2 {
             font-weight: bold;
         }
+
         .container {
             max-width: 960px;
-            margin: 0 auto;
+            margin: 20px auto; /* Center the container */
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background for content */
+            padding: 20px;
+            border-radius: 8px; /* Rounded corners for the container */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
         }
+
         .section {
             margin-bottom: 30px;
             padding: 20px;
             border: 1px solid #ddd;
             border-radius: 5px;
-            box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background for sections */
         }
-        .image-text-container {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            gap: 20px;
-        }
-        .image-text-container img {
-            max-width: 40%;
-            height: auto;
-            border-radius: 5px;
-            box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
-        }
-        @media (max-width: 768px) {
-            .image-text-container {
-                flex-direction: column;
-                text-align: center;
-            }
-            .image-text-container img {
-                max-width: 80%;
-            }
-        }
-        footer {
+
+        .header-content {
             text-align: center;
-            padding-top: 20px;
-            border-top: 1px solid #ddd;
-            margin-top: 30px;
+            padding: 100px 0;
         }
+
+        .header-content h1 {
+            font-size: 3em;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        nav {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px 0;
+        }
+
         nav ul {
             list-style: none;
             padding: 0;
@@ -59,27 +61,28 @@
             justify-content: center;
             gap: 20px;
         }
+
         nav li a {
             text-decoration: none;
-            color: #333;
+            color: white;
             font-weight: bold;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>My Informational Blog</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
 
-        <section class="section">
+    <div class="header-content">
+        <h1>My Informational Blog</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="container">  <section class="section">
             <h2>Welcome to My Blog</h2>
             <p>Welcome to my informational blog! Here, you'll find articles and insights on various topics. I'm passionate about sharing knowledge and exploring interesting subjects. Feel free to browse through the posts below and leave a comment if you have any thoughts or questions.</p>
             <p>This is a place where we can learn and grow together. Whether you're a seasoned expert or just starting your journey, I hope you find something valuable here.</p>
@@ -123,6 +126,6 @@
         <footer>
             <p>&copy; 2023 My Blog. All rights reserved.</p>
         </footer>
-    </div>
+    </div>  
 </body>
 </html>
