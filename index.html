@@ -1,7 +1,128 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Informational Blog - Home</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h1, h2 {
+            font-weight: bold;
+        }
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+        }
+        .section {
+            margin-bottom: 30px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+        }
+        .image-text-container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 20px;
+        }
+        .image-text-container img {
+            max-width: 40%;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+        }
+        @media (max-width: 768px) {
+            .image-text-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            .image-text-container img {
+                max-width: 80%;
+            }
+        }
+        footer {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            margin-top: 30px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        nav li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+    </style>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <div class="container">
+        <header>
+            <h1>My Informational Blog</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="section">
+            <h2>Welcome to My Blog</h2>
+            <p>Welcome to my informational blog! Here, you'll find articles and insights on various topics. I'm passionate about sharing knowledge and exploring interesting subjects. Feel free to browse through the posts below and leave a comment if you have any thoughts or questions.</p>
+            <p>This is a place where we can learn and grow together. Whether you're a seasoned expert or just starting your journey, I hope you find something valuable here.</p>
+
+            <p>Check out some of the latest posts:</p>
+        </section>
+
+        <section class="section">
+            <h2>Recent Post 1: The Importance of Sleep</h2>
+            <div class="image-text-container">
+                <img src="placeholder-sleep.jpg" alt="Person sleeping">
+                <div>
+                    <p>Sleep is crucial for our physical and mental well-being. This post explores the benefits of getting enough sleep, tips for improving your sleep habits, and the consequences of sleep deprivation. Learn how to prioritize sleep and unlock your full potential.</p>
+                    <a href="Article 1.html">Read More</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Recent Post 2: Introduction to Web Development</h2>
+            <div class="image-text-container">
+                <img src="placeholder-webdev.jpg" alt="Coding on a computer">
+                <div>
+                    <p>Interested in building your own website? This introductory guide covers the basics of web development, including HTML, CSS, and JavaScript. We'll explore the fundamental concepts and provide resources to get you started on your web development journey.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Recent Post 3: Exploring the Universe</h2>
+            <div class="image-text-container">
+                <img src="placeholder-space.jpg" alt="Space background">
+                <div>
+                    <p>Take a journey through the cosmos as we explore the wonders of the universe. From distant galaxies to black holes, we'll delve into the mysteries of space and discover the incredible phenomena that shape our understanding of the cosmos.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2023 My Blog. All rights reserved.</p>
+        </footer>
+    </div>
 </body>
 </html>
